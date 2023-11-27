@@ -44,7 +44,8 @@ model.fit(X_train, y_train)
 # Streamlit app
 def main():
     st.title("Readiness Score Predictor")
-    st.write("Predict your match readiness score from your Average Resting Heartrate, Sleep Score and Activity Score")
+    st.write("Predict your match readiness score from your Average Resting Heartrate, Sleep Score and Activity Score.")
+    st.write("The readiness score is calculated using Linear Regression on trained Oura Data.")
     # Collect input features from the user
     average_rhr = st.number_input("Enter Average Resting Heart Rate", value=df['average_rhr'].mean())
     sleep_score = st.number_input("Enter Sleep Score", value=df['sleep_score'].mean())
