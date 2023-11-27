@@ -8,7 +8,7 @@ st.markdown(
     """
     <style>
         body {
-            background-image: url('https://images.pexels.com/photos/3571065/pexels-photo-3571065.jpeg');  /* Replace 'your_image_url.jpg' with the URL or path to your image */
+            background-image: url('https://live.staticflickr.com/131/317494775_b4441cf62b_c.jpg');  /* Replace 'your_image_url.jpg' with the URL or path to your image */
             background-size: cover;
         }
     </style>
