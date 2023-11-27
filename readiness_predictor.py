@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Load your data
-mydata = pd.read_csv("/Users/amitmishra/Desktop/Orlando City SC docs/oura_2019_trends.csv")
+mydata = pd.read_csv("oura_2019_trends.csv")
 mydata['average_rhr'].fillna(mydata['average_rhr'].mean(), inplace=True)
 mydata['sleep_score'].fillna(mydata['sleep_score'].mean(), inplace=True)
 mydata['activity_score'].fillna(mydata['activity_score'].mean(), inplace=True)
