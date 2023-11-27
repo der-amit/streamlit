@@ -4,6 +4,18 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
+st.markdown(
+    """
+    <style>
+        body {
+            background-image: url('https://images.pexels.com/photos/3571065/pexels-photo-3571065.jpeg');  /* Replace 'your_image_url.jpg' with the URL or path to your image */
+            background-size: cover;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Load your data
 mydata = pd.read_csv("oura_2019_trends.csv")
 mydata['average_rhr'].fillna(mydata['average_rhr'].mean(), inplace=True)
