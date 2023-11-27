@@ -32,9 +32,9 @@ model.fit(X_train, y_train)
 # Streamlit app
 def main():
     st.title("Readiness Score Predictor")
-    st.header("Predict your match readiness score from your Average Resting Heartrate, Sleep Score and Activity Score")
+    st.write("Predict your match readiness score from your Average Resting Heartrate, Sleep Score and Activity Score")
     # Collect input features from the user
-    average_rhr = st.number_input("Enter Average RHR", value=df['average_rhr'].mean())
+    average_rhr = st.number_input("Enter Average Resting Heart Rate", value=df['average_rhr'].mean())
     sleep_score = st.number_input("Enter Sleep Score", value=df['sleep_score'].mean())
     activity_score = st.number_input("Enter Activity Score", value=df['activity_score'].mean())
 
@@ -47,7 +47,7 @@ def main():
         prediction = model.predict(features)[0]
 
         # Display the prediction
-        st.success(f"Predicted Readiness Score: {prediction:.2f}")
+        st.success(f"Predicted Readiness Score is: {prediction:.2f}")
 
 if __name__ == "__main__":
     main()
