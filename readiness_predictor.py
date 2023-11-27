@@ -31,7 +31,7 @@ model.fit(X_train, y_train)
 
 # Streamlit app
 def main():
-    st.image('https://live.staticflickr.com/131/317494775_b4441cf62b_c.jpg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
+    st.image('backgroundimg.jpeg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
     st.markdown(
         """
         <style>
