@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
+
 # Load your data
 mydata = pd.read_csv("oura_2019_trends.csv")
 mydata['average_rhr'].fillna(mydata['average_rhr'].mean(), inplace=True)
@@ -31,20 +32,6 @@ model.fit(X_train, y_train)
 
 # Streamlit app
 def main():
-    st.image('backgroundimg.jpeg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
-    st.markdown(
-        """
-        <style>
-            .stImage > img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
     st.title("Readiness Score Predictor")
     st.write("Predict your match readiness score from your Average Resting Heartrate, Sleep Score and Activity Score.")
     st.write("The readiness score is calculated using Linear Regression on trained Oura Data.")
