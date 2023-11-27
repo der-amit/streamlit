@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-st.image('image back.jpeg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
+st.image('backgroundimg.jpeg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
 
 # Load your data
 mydata = pd.read_csv("oura_2019_trends.csv")
