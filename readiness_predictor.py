@@ -4,12 +4,14 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
+st.image('https://live.staticflickr.com/131/317494775_b4441cf62b_c.jpg', use_column_width=True, output_format='auto', unsafe_allow_html=True)
 st.markdown(
     """
     <style>
-        body {
-            background-image: url('https://live.staticflickr.com/131/317494775_b4441cf62b_c.jpg');  /* Replace 'your_image_url.jpg' with the URL or path to your image */
-            background-size: cover;
+        .stImage > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     </style>
     """,
